@@ -5,6 +5,7 @@ export * from '@aurelia-ux/checkbox';
 export * from '@aurelia-ux/chip-input';
 export * from '@aurelia-ux/grid';
 export * from '@aurelia-ux/datepicker';
+export * from '@aurelia-ux/expandable';
 export * from '@aurelia-ux/form';
 export * from '@aurelia-ux/input';
 export * from '@aurelia-ux/input-info';

@@ -1,11 +1,6 @@
 "use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = require("tslib");
 var aurelia_framework_1 = require("aurelia-framework");
 var aurelia_logging_1 = require("aurelia-logging");
 var core_1 = require("@aurelia-ux/core");
@@ -456,43 +451,44 @@ var UxSelect = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.bindable()
     ], UxSelect.prototype, "theme", void 0);
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.bindable()
     ], UxSelect.prototype, "autofocus", void 0);
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.bindable({ defaultValue: false })
     ], UxSelect.prototype, "disabled", void 0);
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.bindable({ defaultValue: false })
     ], UxSelect.prototype, "multiple", void 0);
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.bindable
     ], UxSelect.prototype, "label", void 0);
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.bindable
     ], UxSelect.prototype, "placeholder", void 0);
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.bindable()
     ], UxSelect.prototype, "variant", void 0);
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.bindable
     ], UxSelect.prototype, "dense", void 0);
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.computedFrom('label')
     ], UxSelect.prototype, "placeholderMode", null);
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.computedFrom('multiple')
     ], UxSelect.prototype, "isMultiple", null);
-    __decorate([
+    tslib_1.__decorate([
         aurelia_framework_1.computedFrom('disabled')
     ], UxSelect.prototype, "isDisabled", null);
-    UxSelect = __decorate([
+    UxSelect = tslib_1.__decorate([
         aurelia_framework_1.inject(Element, core_1.StyleEngine, aurelia_framework_1.ObserverLocator, aurelia_framework_1.TaskQueue),
         aurelia_framework_1.processContent(ensureUxOptionOrUxOptGroup),
-        aurelia_framework_1.customElement('ux-select')
+        aurelia_framework_1.customElement('ux-select'),
+        aurelia_framework_1.useView(aurelia_framework_1.PLATFORM.moduleName('./ux-select.html'))
     ], UxSelect);
     return UxSelect;
 }());

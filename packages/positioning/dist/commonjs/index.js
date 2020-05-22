@@ -1,8 +1,6 @@
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = require("tslib");
 var interfaces_1 = require("./interfaces");
 function configure(frameworkConfig, callback) {
     // config.globalResources([
@@ -14,5 +12,6 @@ function configure(frameworkConfig, callback) {
     }
 }
 exports.configure = configure;
-__export(require("./interfaces"));
-__export(require("./ux-positioning"));
+tslib_1.__exportStar(require("./interfaces"), exports);
+tslib_1.__exportStar(require("./ux-positioning"), exports);
+//# sourceMappingURL=index.js.map

@@ -1,14 +1,9 @@
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
+import { __decorate } from "tslib";
 import { customElement, bindable } from 'aurelia-templating';
-import { DOM } from 'aurelia-pal';
+import { DOM, PLATFORM } from 'aurelia-pal';
 import { inject } from 'aurelia-dependency-injection';
 import { StyleEngine, normalizeBooleanAttribute, getBackgroundColorThroughParents } from '@aurelia-ux/core';
-import { observable, computedFrom } from 'aurelia-framework';
+import { observable, computedFrom, useView } from 'aurelia-framework';
 // tslint:disable-next-line: no-submodule-imports
 import '@aurelia-ux/core/components/ux-input-component.css';
 // tslint:disable-next-line: no-submodule-imports
@@ -176,7 +171,8 @@ __decorate([
 ], UxTextArea.prototype, "placeholderMode", null);
 UxTextArea = __decorate([
     inject(Element, StyleEngine),
-    customElement('ux-textarea')
+    customElement('ux-textarea'),
+    useView(PLATFORM.moduleName('./ux-textarea.html'))
 ], UxTextArea);
 export { UxTextArea };
 function stopEvent(e) {

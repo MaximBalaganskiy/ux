@@ -1,10 +1,4 @@
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-define(["require", "exports", "aurelia-framework", "aurelia-logging", "@aurelia-ux/core", "./util", "@aurelia-ux/core/components/ux-input-component.css", "@aurelia-ux/core/components/ux-input-component--outline.css"], function (require, exports, aurelia_framework_1, aurelia_logging_1, core_1, util_1) {
+define(["require", "exports", "tslib", "aurelia-framework", "aurelia-logging", "@aurelia-ux/core", "./util", "@aurelia-ux/core/components/ux-input-component.css", "@aurelia-ux/core/components/ux-input-component--outline.css"], function (require, exports, tslib_1, aurelia_framework_1, aurelia_logging_1, core_1, util_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var UP = 38;
@@ -449,43 +443,44 @@ define(["require", "exports", "aurelia-framework", "aurelia-logging", "@aurelia-
             enumerable: true,
             configurable: true
         });
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.bindable()
         ], UxSelect.prototype, "theme", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.bindable()
         ], UxSelect.prototype, "autofocus", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.bindable({ defaultValue: false })
         ], UxSelect.prototype, "disabled", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.bindable({ defaultValue: false })
         ], UxSelect.prototype, "multiple", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.bindable
         ], UxSelect.prototype, "label", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.bindable
         ], UxSelect.prototype, "placeholder", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.bindable()
         ], UxSelect.prototype, "variant", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.bindable
         ], UxSelect.prototype, "dense", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.computedFrom('label')
         ], UxSelect.prototype, "placeholderMode", null);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.computedFrom('multiple')
         ], UxSelect.prototype, "isMultiple", null);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.computedFrom('disabled')
         ], UxSelect.prototype, "isDisabled", null);
-        UxSelect = __decorate([
+        UxSelect = tslib_1.__decorate([
             aurelia_framework_1.inject(Element, core_1.StyleEngine, aurelia_framework_1.ObserverLocator, aurelia_framework_1.TaskQueue),
             aurelia_framework_1.processContent(ensureUxOptionOrUxOptGroup),
-            aurelia_framework_1.customElement('ux-select')
+            aurelia_framework_1.customElement('ux-select'),
+            aurelia_framework_1.useView(aurelia_framework_1.PLATFORM.moduleName('./ux-select.html'))
         ], UxSelect);
         return UxSelect;
     }());

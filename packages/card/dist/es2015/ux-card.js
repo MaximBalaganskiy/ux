@@ -1,12 +1,8 @@
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
+import { __decorate } from "tslib";
 import { inject } from 'aurelia-dependency-injection';
-import { bindable, customElement } from 'aurelia-templating';
+import { bindable, customElement, useView } from 'aurelia-templating';
 import { StyleEngine } from '@aurelia-ux/core';
+import { PLATFORM } from 'aurelia-pal';
 let UxCard = class UxCard {
     constructor(element, styleEngine) {
         this.element = element;
@@ -83,7 +79,8 @@ __decorate([
 ], UxCard.prototype, "theme", void 0);
 UxCard = __decorate([
     inject(Element, StyleEngine),
-    customElement('ux-card')
+    customElement('ux-card'),
+    useView(PLATFORM.moduleName('./ux-card.html'))
 ], UxCard);
 export { UxCard };
 //# sourceMappingURL=ux-card.js.map

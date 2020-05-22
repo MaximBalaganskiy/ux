@@ -1,30 +1,30 @@
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = require("tslib");
 var aurelia_framework_1 = require("aurelia-framework");
-__export(require("@aurelia-ux/card"));
-__export(require("@aurelia-ux/button"));
-__export(require("@aurelia-ux/checkbox"));
-__export(require("@aurelia-ux/chip-input"));
-__export(require("@aurelia-ux/grid"));
-__export(require("@aurelia-ux/datepicker"));
-__export(require("@aurelia-ux/form"));
-__export(require("@aurelia-ux/input"));
-__export(require("@aurelia-ux/input-info"));
-__export(require("@aurelia-ux/list"));
-__export(require("@aurelia-ux/radio"));
-__export(require("@aurelia-ux/textarea"));
-__export(require("@aurelia-ux/switch"));
-__export(require("@aurelia-ux/select"));
-__export(require("@aurelia-ux/slider"));
+tslib_1.__exportStar(require("@aurelia-ux/card"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/button"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/checkbox"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/chip-input"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/grid"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/datepicker"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/expandable"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/form"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/input"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/input-info"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/list"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/radio"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/textarea"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/switch"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/select"), exports);
+tslib_1.__exportStar(require("@aurelia-ux/slider"), exports);
 function configure(config) {
     config.plugin(aurelia_framework_1.PLATFORM.moduleName('@aurelia-ux/button'));
     config.plugin(aurelia_framework_1.PLATFORM.moduleName('@aurelia-ux/card'));
     config.plugin(aurelia_framework_1.PLATFORM.moduleName('@aurelia-ux/checkbox'));
     config.plugin(aurelia_framework_1.PLATFORM.moduleName('@aurelia-ux/chip-input'));
     config.plugin(aurelia_framework_1.PLATFORM.moduleName('@aurelia-ux/datepicker'));
+    config.plugin(aurelia_framework_1.PLATFORM.moduleName('@aurelia-ux/expandable'));
     config.plugin(aurelia_framework_1.PLATFORM.moduleName('@aurelia-ux/grid'));
     config.plugin(aurelia_framework_1.PLATFORM.moduleName('@aurelia-ux/form'));
     config.plugin(aurelia_framework_1.PLATFORM.moduleName('@aurelia-ux/input'));

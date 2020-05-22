@@ -1,10 +1,4 @@
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-define(["require", "exports", "aurelia-templating", "aurelia-pal", "aurelia-binding", "aurelia-dependency-injection", "@aurelia-ux/core", "@aurelia-ux/core/components/ux-input-component.css", "@aurelia-ux/core/components/ux-input-component--outline.css"], function (require, exports, aurelia_templating_1, aurelia_pal_1, aurelia_binding_1, aurelia_dependency_injection_1, core_1) {
+define(["require", "exports", "tslib", "aurelia-templating", "aurelia-pal", "aurelia-binding", "aurelia-dependency-injection", "@aurelia-ux/core", "@aurelia-ux/core/components/ux-input-component.css", "@aurelia-ux/core/components/ux-input-component--outline.css"], function (require, exports, tslib_1, aurelia_templating_1, aurelia_pal_1, aurelia_binding_1, aurelia_dependency_injection_1, core_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var UxInput = /** @class */ (function () {
@@ -157,60 +151,61 @@ define(["require", "exports", "aurelia-templating", "aurelia-pal", "aurelia-bind
             enumerable: true,
             configurable: true
         });
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "autofocus", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "autocomplete", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "disabled", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "maxlength", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "minlength", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "min", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "max", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "readonly", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "theme", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "label", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "placeholder", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "type", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "variant", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxInput.prototype, "dense", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_binding_1.observable
         ], UxInput.prototype, "rawValue", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_binding_1.observable
         ], UxInput.prototype, "focused", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_binding_1.computedFrom('label')
         ], UxInput.prototype, "placeholderMode", null);
-        UxInput = __decorate([
+        UxInput = tslib_1.__decorate([
             aurelia_dependency_injection_1.inject(Element, core_1.StyleEngine),
-            aurelia_templating_1.customElement('ux-input')
+            aurelia_templating_1.customElement('ux-input'),
+            aurelia_templating_1.useView(aurelia_pal_1.PLATFORM.moduleName('./ux-input.html'))
         ], UxInput);
         return UxInput;
     }());

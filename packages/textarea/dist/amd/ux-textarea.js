@@ -1,10 +1,4 @@
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-define(["require", "exports", "aurelia-templating", "aurelia-pal", "aurelia-dependency-injection", "@aurelia-ux/core", "aurelia-framework", "@aurelia-ux/core/components/ux-input-component.css", "@aurelia-ux/core/components/ux-input-component--outline.css"], function (require, exports, aurelia_templating_1, aurelia_pal_1, aurelia_dependency_injection_1, core_1, aurelia_framework_1) {
+define(["require", "exports", "tslib", "aurelia-templating", "aurelia-pal", "aurelia-dependency-injection", "@aurelia-ux/core", "aurelia-framework", "@aurelia-ux/core/components/ux-input-component.css", "@aurelia-ux/core/components/ux-input-component--outline.css"], function (require, exports, tslib_1, aurelia_templating_1, aurelia_pal_1, aurelia_dependency_injection_1, core_1, aurelia_framework_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var UxTextArea = /** @class */ (function () {
@@ -120,60 +114,61 @@ define(["require", "exports", "aurelia-templating", "aurelia-pal", "aurelia-depe
             enumerable: true,
             configurable: true
         });
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "autocomplete", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "autofocus", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "autoResize", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "cols", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "disabled", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "focus", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "maxlength", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "minlength", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "readonly", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "rows", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "label", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "placeholder", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "theme", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "variant", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_templating_1.bindable
         ], UxTextArea.prototype, "dense", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.observable({ initializer: function () { return ''; } })
         ], UxTextArea.prototype, "rawValue", void 0);
-        __decorate([
+        tslib_1.__decorate([
             aurelia_framework_1.computedFrom('label')
         ], UxTextArea.prototype, "placeholderMode", null);
-        UxTextArea = __decorate([
+        UxTextArea = tslib_1.__decorate([
             aurelia_dependency_injection_1.inject(Element, core_1.StyleEngine),
-            aurelia_templating_1.customElement('ux-textarea')
+            aurelia_templating_1.customElement('ux-textarea'),
+            aurelia_framework_1.useView(aurelia_pal_1.PLATFORM.moduleName('./ux-textarea.html'))
         ], UxTextArea);
         return UxTextArea;
     }());
